@@ -317,6 +317,108 @@ summary{cursor:pointer;color:var(--muted);margin:16px 0 8px}
 .hero2 .q{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.4;max-width:680px}
 #acsec .acc{border:0}
 @media (max-width:760px){.srh,.srh .bar{flex-wrap:wrap}}
+.cards6{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}.cards6 section{margin:0;padding:14px}
+.anrow{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:12px;align-items:start}.anrow2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}.span2{grid-column:1/-1}
+.abox{margin:0}.abox h2{margin-bottom:12px}.apills{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}.apills button{background:none;border:1px solid transparent;color:var(--muted);padding:6px 14px;font-size:.8rem;white-space:nowrap}.apills button[aria-pressed="true"]{background:var(--hover);color:var(--ink);border-color:var(--line)}
+.fpanel{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-bottom:12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--card)}.fpanel select{padding:6px 10px;border-radius:999px}
+.hrow{display:grid;grid-template-columns:minmax(70px,120px) 1fr auto;gap:10px;align-items:center;margin:7px 0;font-size:.8rem}.hrow .hl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ht{height:8px;border-radius:4px;background:var(--line);overflow:hidden}.ht i{display:block;height:100%;border-radius:4px}.hv{font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+.fade{opacity:.4}.dotc{display:inline-block;width:9px;height:9px;border-radius:50%}
+.pbg{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}.pbc{display:flex;flex-direction:column;gap:3px;border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--surface)}.big2g{font-size:.9rem;padding:2px 10px;align-self:flex-start;background:var(--ink);color:var(--bg)}
+td.mg{background:color-mix(in srgb,var(--gain) 14%,transparent)}td.ml{background:color-mix(in srgb,var(--loss) 14%,transparent)}
+.hl2{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px;background:var(--surface)}.hl2 .kv{font-size:1.5rem}
+.antip{position:fixed;z-index:70;background:var(--hover);color:var(--ink);border-radius:8px;padding:5px 9px;font-size:.75rem;pointer-events:none;max-width:280px}
+@media (max-width:1000px){.anrow,.anrow2{grid-template-columns:1fr}.span2{grid-column:auto}}
+.anbar{position:sticky;top:calc(44px + env(safe-area-inset-top,0px));z-index:6;background:var(--bg);padding:8px 0 10px;margin-bottom:6px;border-bottom:1px solid color-mix(in srgb,var(--line) 60%,transparent)}
+.anbar .fpanel{margin:10px 0 0}.ansec{scroll-margin-top:112px;margin-bottom:8px}.anh{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px;font-weight:500}.ansec:first-child .anh{margin-top:8px}
+/* ===== Apple HIG theme: OLED base, frosted glass, SF-style type ===== */
+:root{--bg:#f2f2f7;--card:rgba(255,255,255,.72);--surface:rgba(0,0,0,.04);--hover:rgba(0,0,0,.06);--ink:#1c1c1e;--muted:#6e6e73;--line:rgba(0,0,0,.08);--gain:#1f9d3a;--loss:#e0352b;--accent:#0a84ff;--shadow:0 8px 32px 0 rgba(0,0,0,.10);--ambient:radial-gradient(900px 500px at 10% -10%,rgba(10,132,255,.10),transparent 60%),radial-gradient(800px 500px at 95% 0%,rgba(191,90,242,.08),transparent 55%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#050506;--card:rgba(18,18,21,.8);--surface:rgba(255,255,255,.05);--hover:rgba(255,255,255,.09);--ink:#f5f5f7;--muted:#a1a1aa;--line:rgba(255,255,255,.08);--gain:#32d74b;--loss:#ff453a;--accent:#ffffff;--shadow:0 8px 32px 0 rgba(0,0,0,.36);--ambient:radial-gradient(1100px 600px at 12% -10%,rgba(94,92,230,.15),transparent 60%),radial-gradient(900px 500px at 95% 0%,rgba(10,132,255,.10),transparent 55%),radial-gradient(800px 500px at 50% 115%,rgba(191,90,242,.08),transparent 60%)}}
+:root[data-theme="dark"]{--bg:#050506;--card:rgba(18,18,21,.8);--surface:rgba(255,255,255,.05);--hover:rgba(255,255,255,.09);--ink:#f5f5f7;--muted:#a1a1aa;--line:rgba(255,255,255,.08);--gain:#32d74b;--loss:#ff453a;--accent:#ffffff;--shadow:0 8px 32px 0 rgba(0,0,0,.36);--ambient:radial-gradient(1100px 600px at 12% -10%,rgba(94,92,230,.15),transparent 60%),radial-gradient(900px 500px at 95% 0%,rgba(10,132,255,.10),transparent 55%),radial-gradient(800px 500px at 50% 115%,rgba(191,90,242,.08),transparent 60%)}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;background:var(--bg);background-image:var(--ambient);background-attachment:fixed;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
+/* glass materials */
+section,.card,.card2,.stc,.hero2,.coach,.jc,.pbc,.shcard,.pdc,.scard,.mbox,.pop,.fpanel,.tplc,.bdock,.bsel,.bctl,.bmap,.srdock,.hl2,.hero,.jbox,.srinp,.scsearch,.scfb{background:var(--card);-webkit-backdrop-filter:blur(24px) saturate(1.4);backdrop-filter:blur(24px) saturate(1.4);border:1px solid var(--line);box-shadow:var(--shadow)}
+section,.card,.hero2,.coach,.hero,.mbox,.shcard,.card2{border-radius:24px}
+.stc,.jc,.scard,.pdc,.pbc,.tplc,.fpanel,.hl2,.jbox{border-radius:20px}
+.jbox,.hl2,.pbc{box-shadow:none;background:var(--surface)}
+.srinp,.scsearch,.scfb{box-shadow:none}
+.ldesk section,.rail section{border-radius:22px;padding:14px 16px;margin-bottom:12px}
+.ldesk,.rail{gap:0}
+.ring span{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+.bn{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+/* floating glass dock navigation */
+.topbar{position:sticky;top:16px;z-index:50;height:auto;min-height:48px;margin:16px auto 0;width:calc(100% - 32px);max-width:1680px;padding:8px 24px;border-radius:999px;background:rgba(22,22,26,.75);-webkit-backdrop-filter:blur(40px) saturate(1.8);backdrop-filter:blur(40px) saturate(1.8);border:1px solid rgba(255,255,255,.1);box-shadow:0 8px 32px 0 rgba(0,0,0,.4)}
+:root[data-theme="light"] .topbar{background:rgba(255,255,255,.75);border-color:rgba(0,0,0,.08);box-shadow:0 8px 32px rgba(0,0,0,.12)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .topbar{background:rgba(255,255,255,.75);border-color:rgba(0,0,0,.08);box-shadow:0 8px 32px rgba(0,0,0,.12)}}
+.nav button[aria-current="page"]{background:rgba(255,255,255,.13);border-color:transparent;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+:root[data-theme="light"] .nav button[aria-current="page"]{background:rgba(0,0,0,.07);box-shadow:none}
+.shell{padding-top:20px;padding-bottom:8px}
+.ldesk,.rail{top:92px;max-height:calc(100vh - 108px)}.ldesk{height:calc(100vh - 108px)}.srdock{top:92px}
+.anbar{top:calc(84px + env(safe-area-inset-top,0px));border-bottom:0;background:transparent;-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-radius:20px;padding:8px 4px 10px}
+.ansec{scroll-margin-top:156px}
+/* typography hierarchy */
+h1{font-weight:700;letter-spacing:-.03em}
+h2,.ch,.anh,.stat span:first-child{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kv,.hero-num,.big,.dbig,.big2,.stat span:last-child{font-weight:600;letter-spacing:-.025em}
+.hero-num{font-weight:700;letter-spacing:-.04em}
+.sub,.hint,.empty{color:var(--muted)}
+button,select,input,textarea{letter-spacing:inherit}
+button{background:var(--hover);border-color:transparent}
+button.primary{background:#f5f5f7;color:#0b0b0d;border-color:transparent;font-weight:600}
+:root[data-theme="light"] button.primary{background:#1c1c1e;color:#fff}
+input,select,textarea{background:var(--surface);border-color:var(--line)}
+/* fewer dividers: space instead of lines */
+.row,.prow,.ev,.acc{border-bottom:0!important}
+.row{padding:9px 0}.ev{padding:11px 0}
+th,td{border-bottom:1px solid rgba(255,255,255,.04)}
+.appfoot{border-top:0}
+.pdg .pdc,.jd{border-color:rgba(255,255,255,.06)}
+.cards3,.cards2,.cards4,.cards6,.anrow,.anrow2,.scg,.jg2{gap:16px}
+@media (prefers-reduced-transparency:reduce){section,.card,.card2,.stc,.hero2,.coach,.jc,.pbc,.shcard,.pdc,.scard,.mbox,.pop,.fpanel,.tplc,.bdock,.bsel,.bctl,.bmap,.srdock,.hl2,.hero,.jbox,.srinp,.scsearch,.scfb,.topbar{-webkit-backdrop-filter:none;backdrop-filter:none;background:#121215}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.topbar{background:rgba(22,22,26,.96)}}
+@media (max-width:760px){.topbar{top:8px;margin:8px auto 0;width:calc(100% - 16px);padding:6px 12px}.ldesk,.rail{top:auto}}
+/* ===== Apple tactile micro-interactions ===== */
+button,.chip,.nav button,.apills button,.seg button,.srdock button,.bdock button,.bctl button,.tplc,input,select,textarea{transition:background-color .3s cubic-bezier(.22,1,.36,1),color .3s cubic-bezier(.22,1,.36,1),box-shadow .3s cubic-bezier(.22,1,.36,1),border-color .2s ease-out,transform .2s cubic-bezier(.22,1,.36,1),opacity .2s ease-out}
+.nav button[aria-current="page"],.apills button[aria-pressed="true"],.seg button[aria-pressed="true"],.srdock button[aria-pressed="true"],.bdock button[aria-pressed="true"],.bctl button[aria-pressed="true"],.chip[aria-pressed="true"],.tplc[aria-pressed="true"]{background:rgba(255,255,255,.1);color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.1),inset 0 0 0 1px rgba(255,255,255,.1);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:999px;border-color:transparent}
+.tplc[aria-pressed="true"],.chip[aria-pressed="true"]{border-radius:20px}.chip[aria-pressed="true"]{border-radius:999px}
+:root[data-theme="light"] .nav button[aria-current="page"],.apills button[aria-pressed="true"],.seg button[aria-pressed="true"],.srdock button[aria-pressed="true"],.bdock button[aria-pressed="true"],.bctl button[aria-pressed="true"],.chip[aria-pressed="true"],.tplc[aria-pressed="true"]{background:rgba(0,0,0,.07);color:#1c1c1e;box-shadow:0 1px 2px rgba(0,0,0,.12),inset 0 0 0 1px rgba(0,0,0,.06)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .nav button[aria-current="page"],.apills button[aria-pressed="true"],.seg button[aria-pressed="true"],.srdock button[aria-pressed="true"],.bdock button[aria-pressed="true"],.bctl button[aria-pressed="true"],.chip[aria-pressed="true"],.tplc[aria-pressed="true"]{background:rgba(0,0,0,.07);color:#1c1c1e;box-shadow:0 1px 2px rgba(0,0,0,.12),inset 0 0 0 1px rgba(0,0,0,.06)}}
+.wseg button[aria-pressed="true"]{background:#f5f5f7;color:#0b0b0d}
+button:hover:not(:disabled):not([aria-pressed="true"]):not(.primary){background:rgba(255,255,255,.14)}
+button:active:not(:disabled){transform:scale(.97)}
+.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard{transition:transform .2s ease-out,border-color .2s ease-out,box-shadow .3s ease-out}
+.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard:hover{transform:scale(1.01);border-color:rgba(255,255,255,.2);box-shadow:var(--shadow),0 0 40px rgba(130,130,255,.09)}
+.topbar,.ldesk section,.rail section{transition:border-color .2s ease-out,box-shadow .3s ease-out}
+.ldesk section:hover,.rail section:hover{border-color:rgba(255,255,255,.16);box-shadow:var(--shadow),0 0 32px rgba(130,130,255,.06)}
+input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:rgba(255,255,255,.3)}
+html{scroll-behavior:smooth}
+.scroll,.nav,.apills,.bdock,.mbox,.pop,.ldesk,.rail{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard:hover{transform:none}button:active:not(:disabled){transform:none}*{transition-duration:.01ms!important}}
+/* ===== Apple fluid motion system: spring physics, morphing pills, reveals ===== */
+:root{--spring:cubic-bezier(0.16,1,0.3,1)}
+button,.chip,a,.nav button,.apills button,.seg button,.srdock button,.bdock button,.bctl button,.tplc,[data-cd],[data-jd],[data-bopen],[data-open],.pdc,.pinb,input,select,textarea{transition:all .3s var(--spring)}
+button:hover:not(:disabled),.chip:hover,[data-cd]:hover,[data-jd]:hover{transform:scale(1.02)}
+button:active:not(:disabled),.chip:active,[data-cd]:active,[data-jd]:active,[data-bopen]:active,[data-open]:active{transform:scale(.95);transition-duration:.15s}
+.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard{transition:transform .3s var(--spring),border-color .3s var(--spring),box-shadow .3s var(--spring)}
+.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard:hover{transform:scale(1.01);border-color:rgba(255,255,255,.2);box-shadow:var(--shadow),0 0 25px rgba(255,255,255,.03)}
+.ldesk section:hover,.rail section:hover{border-color:rgba(255,255,255,.2);box-shadow:var(--shadow),0 0 25px rgba(255,255,255,.03)}
+/* morphing active-pill indicator */
+.nav,.apills,.seg{position:relative}
+.mi{position:absolute;left:0;top:0;z-index:0;pointer-events:none;border-radius:999px;background:rgba(255,255,255,.1);box-shadow:0 1px 2px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.1),inset 0 0 0 1px rgba(255,255,255,.1);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transition:transform .4s var(--spring),width .4s var(--spring),height .4s var(--spring),opacity .3s var(--spring)}
+.morph-on>[aria-pressed="true"],.morph-on>[aria-current="page"]{background:transparent!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.morph-on>button,.morph-on>.brandmid{position:relative;z-index:1}
+.wseg .mi{background:#f5f5f7;box-shadow:0 1px 2px rgba(0,0,0,.3)}.srdock .mi{border-radius:14px}
+.nav>:first-child:not(.mi){margin-inline-start:auto}.nav>.mi+*{margin-inline-start:auto}
+:root[data-theme="light"] .mi{background:rgba(0,0,0,.07);box-shadow:0 1px 2px rgba(0,0,0,.12),inset 0 0 0 1px rgba(0,0,0,.06)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .mi{background:rgba(0,0,0,.07);box-shadow:0 1px 2px rgba(0,0,0,.12),inset 0 0 0 1px rgba(0,0,0,.06)}}
+/* section + view + overlay entrances */
+.ansec.rv{opacity:0;transform:translateY(16px);transition:opacity .6s var(--spring),transform .6s var(--spring)}.ansec.rv.in{opacity:1;transform:none}
+@keyframes viewIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.view:not([hidden]),#srnotes:not([hidden]),#stboards:not([hidden]),#srhome:not([hidden]),#srfold:not([hidden]){animation:viewIn .4s var(--spring)}
+@keyframes popIn{from{opacity:0;transform:scale(.96) translateY(-4px)}to{opacity:1;transform:none}}
+.pop:not([hidden]){animation:popIn .25s var(--spring);transform-origin:top}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes boxIn{from{opacity:0;transform:scale(.96) translateY(8px)}to{opacity:1;transform:none}}
+.modal:not([hidden]){animation:fadeIn .25s var(--spring)}.modal:not([hidden]) .mbox{animation:boxIn .35s var(--spring)}.bov:not([hidden]){animation:fadeIn .3s var(--spring)}
+@media (prefers-reduced-motion:reduce){button:hover:not(:disabled),.chip:hover,[data-cd]:hover,[data-jd]:hover,button:active:not(:disabled),.chip:active,[data-cd]:active,[data-jd]:active,[data-bopen]:active,[data-open]:active,.stc,.jc,.scard,.pdc,.pbc,.tplc,.card2,.abox,.cards3>section,.cards4>section,.cards6>section,.cards2>section,.coach,.hero2,.shcard:hover{transform:none}.ansec.rv{opacity:1;transform:none;transition:none}.view,.pop,.modal,.mbox,.bov,#srnotes,#stboards,#srhome,#srfold{animation:none!important}.mi{transition:none}}
 </style>
 </head>
 <body>
@@ -441,21 +543,7 @@ summary{cursor:pointer;color:var(--muted);margin:16px 0 8px}
   <div id="stboards" hidden></div><div id="srhome" hidden></div><div id="srfold" hidden></div>
   </div></div>
 </div>
-<div class="view" id="v-analytics" hidden>
-  <section><div class="bar">
-    <div class="bar" id="antabs">
-      <button type="button" data-an="overview" aria-current="page">نظرة عامة</button>
-      <button type="button" data-an="performance">الأداء</button>
-      <button type="button" data-an="compare">المقارنة</button>
-      <button type="button" data-an="time">الوقت</button>
-      <button type="button" data-an="psych">النفسية</button>
-      <button type="button" data-an="insights">الملاحظات</button>
-      <button type="button" data-an="risk">المخاطر</button>
-    </div>
-    <label>الفترة<select id="anp"><option value="all">كل الفترة</option><option value="m">هذا الشهر</option><option value="30">آخر 30 يوماً</option></select></label>
-  </div></section>
-  <section id="anbody"></section>
-</div>
+<div class="view" id="v-analytics" hidden><div id="anroot"></div></div>
 <div class="view" id="v-journal" hidden><div id="jroot"></div></div>
 <div class="view" id="v-showcase" hidden><div id="scroot"></div>
 <details id="shdet"><summary>مشاركة الملف</summary><section>
@@ -784,28 +872,155 @@ function mc(n){return "<span class='num "+cls(n)+"'>"+money(n)+"</span>"}
 function tbl(h,rows){return "<div class='scroll'><table><thead><tr>"+h.map(function(c){return "<th>"+c+"</th>"}).join("")+"</tr></thead><tbody>"+rows.join("")+"</tbody></table></div>"}
 function gtable(rows,lf){return rows.length?tbl(["","عدد الصفقات","نسبة الربح","Profit Factor","الصافي"],rows.map(function(r){return "<tr><td>"+lf(r)+"</td><td>"+nm(r.n)+"</td><td>"+nm(Math.round(r.wr)+"%")+"</td><td>"+nm(pf(r.pf))+"</td><td>"+mc(r.net)+"</td></tr>"})):"<p class='empty'>لا توجد بيانات كافية.</p>"}
 function led(o){return "<div class='ledger'>"+o.map(function(r){return "<div class='stat'><span>"+r[0]+"</span><span>"+r[1]+"</span></div>"}).join("")+"</div>"}
-function plist(){var p=$("anp").value,now=new Date(),m=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
-  var l=trades.slice().sort(function(a,b){return (a.date+(a.time||"")).localeCompare(b.date+(b.time||""))});
-  if(p==="m")return l.filter(function(x){return x.date.slice(0,7)===m});
-  if(p==="30"){var c=new Date(now-30*864e5).toISOString().slice(0,10);return l.filter(function(x){return x.date>=c})}
-  return l}
-function kpis(s){return led([["صافي الربح",mc(s.net)],["عدد الصفقات",nm(s.n)],["نسبة الربح",nm(Math.round(s.wr)+"%")],["Profit Factor",nm(pf(s.pf))],["متوسط الربح",mc(s.aw)],["متوسط الخسارة",mc(-s.al)],["التوقع لكل صفقة",mc(s.ex)]])}
-function curve(l){var c=0,pts=l.map(function(x){c+=x.pnl;return c});pts.unshift(0);
-  var mn=Math.min.apply(null,pts),mx=Math.max.apply(null,pts),r=(mx-mn)||1,n=pts.length-1||1;
-  var d=pts.map(function(v,i){return (i/n*600).toFixed(1)+","+(155-(v-mn)/r*150).toFixed(1)}).join(" "),z=(155-(0-mn)/r*150).toFixed(1);
-  return "<h2>منحنى الرصيد</h2><svg viewBox='0 0 600 160' width='100%' role='img' aria-label='Equity curve'><line x1='0' x2='600' y1='"+z+"' y2='"+z+"' stroke='var(--line)' stroke-dasharray='4'/><polyline fill='none' stroke='var(--accent)' stroke-width='2' points='"+d+"'/></svg>"}
-function two(a,b,la,lb){var R=[["عدد الصفقات",function(q){return nm(q.n)}],["نسبة الربح",function(q){return nm(Math.round(q.wr)+"%")}],["Profit Factor",function(q){return nm(pf(q.pf))}],["الصافي",function(q){return mc(q.net)}],["التوقع لكل صفقة",function(q){return mc(q.ex)}]];
-  return tbl(["",la,lb],R.map(function(r){return "<tr><td>"+r[0]+"</td><td>"+r[1](a)+"</td><td>"+r[1](b)+"</td></tr>"}))}
-function cmp(l){var now=new Date(),k=function(o){var d=new Date(now.getFullYear(),now.getMonth()-o,1);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")};
-  var A=trades.filter(function(x){return x.date.slice(0,7)===k(0)}),B=trades.filter(function(x){return x.date.slice(0,7)===k(1)});
-  return "<h2>هذا الشهر مقابل الشهر السابق</h2>"+two(st(A),st(B),"هذا الشهر","الشهر السابق")+"<h2>الدخول من المستوى مقابل المبكّر</h2>"+two(st(l.filter(function(x){return x.lvl})),st(l.filter(function(x){return !x.lvl})),"دخول من المستوى","دخول مبكّر")}
-function timeV(l){var W=grp(l,wdOf).sort(function(a,b){return a.k-b.k}),H=grp(l.filter(function(x){return x.time}),function(x){return x.time.slice(0,2)}).sort(function(a,b){return a.k-b.k});
-  return "<h2>حسب يوم الأسبوع</h2>"+gtable(W,function(r){return wdName(r.k)})+"<h2>حسب ساعة الدخول</h2>"+(H.length?gtable(H,function(r){return r.k+":00"}):"<p class='empty'>أضف وقت الدخول للصفقات لتظهر هذه الإحصائية.</p>")}
-function psy(l){return "<h2>الأداء حسب الحالة النفسية</h2>"+(l.some(function(x){return x.emo})?gtable(grp(l,function(x){return x.emo}),function(r){return esc(r.k)}):"<p class='empty'>سجّل حالتك النفسية مع كل صفقة لتظهر الأنماط.</p>")+"<h2>الالتزام بالخطة</h2>"+gtable(grp(l,function(x){return x.lvl?"دخول من المستوى":"دخول مبكّر"}),function(r){return r.k})}
-function riskV(l){var c=0,pk=0,dd=0,ls=0,ml=0,lw=0;
-  l.forEach(function(x){c+=x.pnl;pk=Math.max(pk,c);dd=Math.max(dd,pk-c);if(x.pnl<0){ls++;ml=Math.max(ml,ls);lw=Math.min(lw,x.pnl)}else ls=0});
-  var w=l.filter(function(x){return x.risk>0}),avg=function(a){return a.length?a.reduce(function(p,q){return p+q},0)/a.length:0};
-  return led([["أكبر خسارة",mc(lw)],["أقصى تراجع (Drawdown)",mc(-dd)],["أطول سلسلة خسائر",nm(ml)],["صفقات بدون وقف خسارة",nm(l.length-w.length)],["متوسط المخاطرة لكل صفقة",w.length?mc(-avg(w.map(function(x){return x.risk}))):"—"],["متوسط R",w.length?nm(avg(w.map(function(x){return x.pnl/x.risk})).toFixed(2)+"R"):"—"]])}
+/* ---- Analytics: 6 tabs ---- */
+var ANJ=[["an_title", "التحليلات", "Analytics"], ["an_c1", "{n} صفقة محلّلة", "{n} trade analyzed"], ["an_cn", "{n} صفقات محلّلة", "{n} trades analyzed"], ["an_unlocked", "✦ كل المزايا مفتوحة", "✦ Every feature unlocked"], ["an_t_overview", "نظرة عامة", "Overview"], ["an_t_performance", "الأداء", "Performance"], ["an_t_time", "الوقت", "Time"], ["an_t_psych", "النفسية", "Psychology"], ["an_t_insights", "الملاحظات", "Insights"], ["an_t_risk", "المخاطر", "Risk"], ["an_filters", "فلاتر ▾", "Filters ▾"], ["an_period", "الفترة", "Period"], ["an_p_all", "كل الفترة", "All time"], ["an_p_7", "آخر 7 أيام", "Last 7 days"], ["an_p_30", "آخر 30 يوماً", "Last 30 days"], ["an_p_m", "هذا الشهر", "This month"], ["an_p_y", "هذه السنة", "This year"], ["an_reset", "إعادة ضبط", "Reset"], ["an_best", "أفضل صفقة", "Best trade"], ["an_worst", "أسوأ صفقة", "Worst trade"], ["an_cum", "الأرباح التراكمية", "Cumulative P&L"], ["an_cal", "تقويم الأرباح والخسائر", "P&L Calendar"], ["an_cal_hint", "اضغط على يوم لتشوف صفقاته", "Click a day to see trades"], ["an_day_none", "ما في صفقات بهذا اليوم.", "No trades on this day."], ["an_nodata", "لا توجد بيانات كافية.", "Not enough data yet."], ["an_p1", "نسبة الربح حسب الاستراتيجية", "Win rate by strategy"], ["an_p1s", "طول الشريط = نسبة الربح، واللون = الربح أو الخسارة", "Bar length = win rate, colour = money"], ["an_nostrat", "بدون استراتيجية", "No strategy"], ["an_p2", "بطاقة تقييم السيناريوهات", "Playbook report card"], ["an_p2s", "التقييم حسب نسبة الربح", "Graded on win rate"], ["an_p2h", "سجّل السيناريو بنموذج Advanced لتظهر البطاقات.", "Log the playbook in the Advanced form to see cards."], ["an_p3", "شو بتتداول", "What you trade"], ["an_p3s", "حجم الشريحة = عدد الصفقات", "Slice size = number of trades"], ["an_p4", "الربح حسب التقييم", "P&L by grade"], ["an_p5", "نسبة الربح حسب نوع الصفقة", "Win rate by trade type"], ["an_p6", "السيناريوهات حسب الجلسة", "Setups by session"], ["an_p6s", "الخلايا الباهتة = أقل من 5 صفقات", "Faded cells have fewer than 5 trades"], ["an_p7", "تقاطعات بتدفع", "Confluences that pay"], ["an_p7s", "نسبة الربح مع كل عنصر والفرق عن الصفقات بدونه", "Win rate with each chip, and the gap against trades without it"], ["an_p7h", "سجّل تحليل السوق (FVG، OB...) بنموذج Advanced.", "Log the market breakdown (FVG, OB...) in the Advanced form."], ["an_p8", "تركيبات بتدفع", "Combos that pay"], ["an_p8s", "صفقات فيها أكثر من عنصر، بنسبة الربح والمردود", "Trades with several chips, with win rate and yield"], ["an_gap", "الفرق", "gap"], ["an_with", "معه", "with"], ["an_fade", "أقل من 5 صفقات", "fewer than 5 trades"], ["an_row_n", "{n} صفقات", "{n} trades"], ["an_t_best", "أفضل ساعة عندك", "Your best hour"], ["an_t_sub", "اضغط على ساعة لتفاصيلها", "Click an hour for details"], ["an_t_notime", "أضف وقت الدخول لصفقاتك لتظهر ساعات التداول.", "Add an entry time to your trades to see hourly results."], ["an_t_sess", "حسب الجلسة", "By session"], ["an_t_wd", "حسب يوم الأسبوع", "By weekday"], ["an_t_worst", "أضعف ساعة", "Your weakest hour"], ["an_t_sel", "الساعة المحددة", "Selected hour"], ["an_psy_sub", "كيف غيّر كل شعور صفقاتك، مقارنةً بمعدّلك الطبيعي", "How each feeling changed your trades, against your own normal"], ["an_neg", "المشاعر السلبية", "Negative emotions"], ["an_pos", "المشاعر الإيجابية", "Positive emotions"], ["an_costly", "أكثر مشاعرك كلفة", "Your costliest emotion"], ["an_profit", "أكثر مشاعرك ربحاً", "Your most profitable emotion"], ["an_normal", "معدّلك الطبيعي {v} لكل صفقة", "Your normal is {v} per trade"], ["an_impact", "{n} صفقات · {v} لكل صفقة ({d} عن المعدّل) · نسبة ربح {w}%", "{n} trades · {v} per trade ({d} vs normal) · {w}% win rate"], ["an_nopsy", "سجّل المشاعر بنموذج Advanced لتظهر هنا.", "Log emotions in the Advanced form to see them here."], ["an_ai_pat", "أنماط الذكاء الاصطناعي", "AI PATTERNS"], ["an_ai_pats", "كاشف يعتمد على القواعد: تركيبات وتسلسلات وتناقضات", "A rule-based detector: combinations, sequences and contradictions"], ["an_ai_an", "تحليل الذكاء الاصطناعي", "AI ANALYSIS"], ["an_ai_ans", "قراءة مدرّب لحافتك وثغراتك وخطوتك التالية من دفترك", "A coach-style read of your edge, leaks and next moves from your journal"], ["an_gen", "توليد التحليل", "Generate analysis"], ["an_regen", "تحديث التحليل", "Refresh analysis"], ["an_gen_wait", "المدرّب يقرأ دفترك…", "The coach is reading your journal…"], ["an_gen_fail", "تعذّر الوصول للمساعد.", "Couldn't reach the assistant."], ["an_gen_min", "سجّل 5 صفقات على الأقل أولاً.", "Log at least 5 trades first."], ["an_gen_at", "آخر تحليل", "Last analysis"], ["ip_best", "أفضل تركيبة: {c} بصافي {v} ({n} صفقات).", "Best combination: {c}, net {v} ({n} trades)."], ["ip_worst", "أضعف تركيبة: {c} بصافي {v} ({n} صفقات).", "Weakest combination: {c}, net {v} ({n} trades)."], ["ip_seq", "بعد خسارتين متتاليتين، الصفقة التالية بتربح {w}% (معدّلك {b}%).", "After two losses in a row, your next trade wins {w}% (your normal is {b}%)."], ["ip_c1", "{n} صفقات قيّمتها A أو A+ وانتهت بخسارة. التقييم لحاله ما بيتنبأ بالنتيجة.", "{n} trades graded A or A+ still lost. The grade alone doesn't predict the outcome."], ["ip_c2", "التزمت بخطتك بـ {n} صفقات خاسرة. يمكن الخطة نفسها بتحتاج مراجعة.", "You followed your plan on {n} losing trades. The plan itself may need a review."], ["ip_c3", "{n} صفقات بتقييم C أو F ربحت. الربح ما كان بسبب العملية.", "{n} trades graded C or F still won. The result wasn't down to the process."], ["ip_rev", "صفقات الانتقام: {n}، صافيها {v}.", "Revenge trades: {n}, net {v}."], ["ip_none", "ما في أنماط كافية بعد. سجّل المزيد من التفاصيل.", "Not enough patterns yet. Log more detail."], ["an_r1", "الحرارة مقابل أفضل جريان", "Heat vs best run"], ["an_r1s", "كل صفقة نقطة: كم راحت ضدك (الحرارة) مقابل كم جرت لصالحك (أفضل جريان) بالـ R", "Every trade is a dot: how far it went against you (heat) vs. how far it ran your way (best run), in R"], ["an_noheat", "سجّل أقصى حرارة وأفضل جريان (R) بنموذج Advanced لتظهر النقاط.", "Log Max heat and Best run (R) in the Advanced form to plot your dots."], ["an_stop", "وقف الخسارة (1R)", "Stop (1R)"], ["an_hit", "ضرب الوقف", "hit the stop"], ["an_r2", "تراجع الرصيد", "Equity drawdown"], ["an_r2s", "التراجع يوماً بيوم تحت أفضل أرباحك", "Day-by-day drawdown below your best P&L"], ["an_maxdd", "أقصى تراجع", "Max drawdown"], ["an_curdd", "التراجع الحالي", "Current drawdown"], ["an_hw", "قمم جديدة", "New highs"], ["f_heat", "أقصى حرارة (R)", "Max heat (R)"], ["f_run", "أفضل جريان (R)", "Best run (R)"]];
+var AN={tab:"overview",per:"all",acct:"",sym:"",strat:"",ses:"",open:false,cm:ymd(new Date()).slice(0,7),day:null,hr:null,ai:null},
+ ANT=[["overview","an_t_overview"],["performance","an_t_performance"],["time","an_t_time"],["psych","an_t_psych"],["insights","an_t_insights"],["risk","an_t_risk"]],
+ REV={"هادئ":"Calm","واثق":"Confident","متوتر":"Anxious","خوف":"Fearful","طمع":"Fomo","انتقام":"Revenge","ملل":"Impatient"},SES=["Asia","London","NY AM","NY PM"],PAL=["#3b82f6","#22c55e","#f59e0b","#a855f7","#ec4899","#06b6d4","#ef4444","#9ca3af"];
+function jf(k,o){return jt(k).replace(/\{(\w+)\}/g,function(m,a){return o[a]})}
+function anF(src){var n=new Date(),from=null,p=AN.per;if(p==="7")from=ymd(addD(n,-7));else if(p==="30")from=ymd(addD(n,-30));else if(p==="m")from=ymd(n).slice(0,7)+"-01";else if(p==="y")from=n.getFullYear()+"-01-01";
+  return src.slice().sort(function(a,b){return (a.date+(a.time||"")).localeCompare(b.date+(b.time||""))}).filter(function(x){return (!from||x.date>=from)&&(!AN.acct||x.acct===AN.acct)&&(!AN.sym||x.symbol===AN.sym)&&(!AN.strat||x.strat===AN.strat)&&(!AN.ses||(x.j&&x.j.ses)===AN.ses)})}
+function mpr(n){return "<span class='num pl "+cls(n)+"'>"+money(Math.round(n))+"</span>"}
+function mp(n){return "<span class='num pl "+cls(n)+"'>"+money(n)+"</span>"}
+function tip(t){return " data-tip='"+qa(t)+"'"}
+function jv(x,k){return (x.j&&x.j[k])||[]}
+function emTags(x){var q=x.j||{},neg=(q.neg||[]).slice(),pos=(q.pos||[]).slice();if(!neg.length&&!pos.length&&x.emo&&REV[x.emo]){var t0=REV[x.emo];(NEG.indexOf(t0)>-1?neg:pos).push(t0)}return{neg:neg,pos:pos}}
+function hrow(label,pct,val,col,fade,tp){return "<div class='hrow"+(fade?" fade":"")+"'"+tip(tp||label+" · "+val)+"><span class='hl'>"+label+"</span><div class='ht'><i style='width:"+Math.max(2,Math.min(100,pct))+"%;background:"+col+"'></i></div><span class='hv'>"+val+"</span></div>"}
+function box(title,sub,body,cl){return "<section class='abox "+(cl||"")+"'><h2>"+title+"</h2>"+(sub?"<div class='sub' style='margin:-8px 0 10px'>"+sub+"</div>":"")+body+"</section>"}
+function areaSvg(pts,lbs,cid,neg){var W=600,H=170,mn=Math.min.apply(null,pts.concat(0)),mx=Math.max.apply(null,pts.concat(0)),r=(mx-mn)||1,n=pts.length-1||1,X=function(i){return 10+i/n*580},Y=function(v){return H-20-(v-mn)/r*(H-40)},col=neg?"var(--loss)":(pts[pts.length-1]>=0?"var(--gain)":"var(--loss)");
+  var d=pts.map(function(v,i){return X(i).toFixed(1)+","+Y(v).toFixed(1)}).join(" "),z=Y(0).toFixed(1);
+  return "<svg viewBox='0 0 600 "+H+"' width='100%' role='img'><defs><linearGradient id='g"+cid+"' x1='0' x2='0' y1='0' y2='1'><stop offset='0' style='stop-color:"+col+";stop-opacity:.35'/><stop offset='1' style='stop-color:"+col+";stop-opacity:0'/></linearGradient></defs><line x1='10' x2='590' y1='"+z+"' y2='"+z+"' style='stroke:var(--line)' stroke-dasharray='4'/>"
+   +"<polygon points='"+X(0).toFixed(1)+","+z+" "+d+" "+X(n).toFixed(1)+","+z+"' fill='url(#g"+cid+")'/><polyline class='drawl' pathLength='1' style='fill:none;stroke:"+col+";stroke-width:2' points='"+d+"'/>"
+   +(pts.length<=160?pts.map(function(v,i){return "<circle cx='"+X(i).toFixed(1)+"' cy='"+Y(v).toFixed(1)+"' r='5' fill='transparent'"+tip((lbs[i]||"")+" · "+money(v))+"/>"}).join(""):"")+"</svg>"}
+function donut(sl){var tot=sl.reduce(function(a,x){return a+x.n},0),R=60,C=2*Math.PI*R,off=0,h="<svg viewBox='0 0 160 160' width='170' height='170'>";
+  sl.forEach(function(x,i){var len=x.n/tot*C;h+="<circle r='"+R+"' cx='80' cy='80' fill='none' stroke='"+PAL[i%PAL.length]+"' stroke-width='26' stroke-dasharray='"+len.toFixed(2)+" "+(C-len).toFixed(2)+"' stroke-dashoffset='"+(-off).toFixed(2)+"' transform='rotate(-90 80 80)'"+tip(x.k+" · "+x.n+" · "+money(x.net))+"/>";off+=len});
+  return h+"<text x='80' y='86' text-anchor='middle' style='fill:var(--ink);font-size:22px;font-weight:700'>"+tot+"</text></svg>"}
+function lg(wr){return wr>=70?"A":wr>=55?"B":wr>=40?"C":"D"}
+
+/* Overview */
+function calA(l){var m=AN.cm,y=+m.slice(0,4),mo=+m.slice(5,7)-1,nd=new Date(y,mo+1,0).getDate(),off=new Date(y,mo,1).getDay(),by={},net=0,td=ymd(new Date());
+  l.forEach(function(x){if(x.date.slice(0,7)===m){by[x.date]=(by[x.date]||0)+x.pnl;net+=x.pnl}});
+  var h="<div class='bar' style='justify-content:space-between;margin-bottom:8px'><b>"+esc(new Date(y,mo,1).toLocaleDateString(loc(),{month:"long",year:"numeric"}))+"</b><span class='bar'><span>"+mp(net)+"</span><button type='button' data-acm='-1' aria-label='Previous'>‹</button><button type='button' data-acm='1' aria-label='Next'>›</button></span></div><div class='jcal'>";
+  for(var i=0;i<7;i++)h+="<div class='ch'>"+new Date(2024,0,7+i).toLocaleDateString(loc(),{weekday:"short"})+"</div>";
+  for(var c=0;c<Math.ceil((off+nd)/7)*7;c++){var dn=c-off+1;if(dn<1||dn>nd){h+="<div class='jd off'></div>";continue}var ds=m+"-"+pad(dn),has=by[ds]!=null;
+    h+="<div class='jd"+(has?(by[ds]>=0?" gain":" loss"):"")+(ds===td?" today":"")+(ds===AN.day?" sel":"")+"' data-cd='"+ds+"'><span class='dn'>"+dn+"</span>"+(has?"<b class='num pl "+cls(by[ds])+"'>"+(by[ds]>=0?"+":"")+Math.round(by[ds])+"</b>":"")+"</div>"}
+  h+="</div><p class='hint' style='margin:8px 0 0'>"+jt("an_cal_hint")+"</p>";
+  if(AN.day){var dl=l.filter(function(x){return x.date===AN.day});h+="<div style='margin-top:8px'><div class='hint'>"+esc(AN.day)+"</div>"+(dl.length?dl.map(function(x){return "<div class='row'><span>"+esc(x.symbol)+" <span class='sub'>"+(x.dir==="Buy"?"Long":"Short")+(x.j&&x.j.grade?" · "+esc(x.j.grade):"")+"</span></span>"+mp(x.pnl)+"</div>"}).join(""):"<p class='empty'>"+jt("an_day_none")+"</p>")+"</div>"}
+  return h}
+function anOverview(l){var s=st(l),rs=l.filter(function(x){return x.pnl>0&&x.risk>0}).map(function(x){return x.pnl/x.risk}),best=l.length?Math.max.apply(null,l.map(function(x){return x.pnl})):0,worst=l.length?Math.min.apply(null,l.map(function(x){return x.pnl})):0;
+  var cards=[[jt("s_total"),mpr(s.net)],[jt("s_wr"),"<span class='num'>"+s.wr.toFixed(1)+"%</span>"],[jt("s_rr"),"<span class='num'>"+avg(rs).toFixed(2)+"R</span>"],["Profit Factor","<span class='num'>"+pf(s.pf)+"</span>"],[jt("an_best"),mpr(best)],[jt("an_worst"),mpr(worst)]];
+  var c=0,pts=[0],lbs=["—"];l.forEach(function(x){c+=x.pnl;pts.push(c);lbs.push(x.date)});
+  return "<div class='cards6'>"+cards.map(function(q){return "<section><h2>"+q[0]+"</h2><div class='kv'>"+q[1]+"</div></section>"}).join("")+"</div><div class='anrow'>"+box(jt("an_cum"),"",l.length?areaSvg(pts,lbs,"o"):"<p class='empty'>"+jt("an_nodata")+"</p>")+box(jt("an_cal"),"",calA(l))+"</div>"}
+
+/* Performance */
+function anPerf(l){
+  var sg=grp(l,function(x){return x.strat?sname(x.strat):jt("an_nostrat")}),mxn=Math.max.apply(null,sg.map(function(r){return Math.abs(r.net)}).concat(1));
+  var b1=sg.length?sg.map(function(r){return hrow(esc(r.k),r.wr,Math.round(r.wr)+"% · "+money(r.net),r.net>=0?"var(--gain)":"var(--loss)",r.n<2,r.k+" · "+jt("an_row_n").replace("{n}",r.n))}).join(""):"<p class='empty'>"+jt("an_nodata")+"</p>";
+  var pb={};l.forEach(function(x){jv(x,"pb").forEach(function(t){(pb[t]=pb[t]||[]).push(x)})});var pk=Object.keys(pb).map(function(k){var r=st(pb[k]);r.k=k;return r}).sort(function(a,b){return b.wr-a.wr});
+  var b2=pk.length?"<div class='pbg'>"+pk.map(function(r){return "<div class='pbc"+(r.n<5?" fade":"")+"'"+tip(lab(r.k)+" · "+jt("an_row_n").replace("{n}",r.n))+"><span class='gpill big2g'>"+lg(r.wr)+"</span><b>"+esc(lab(r.k))+"</b><span class='sub'>"+Math.round(r.wr)+"% · "+jt("an_row_n").replace("{n}",r.n)+"</span>"+mp(r.net)+"</div>"}).join("")+"</div>":"<p class='empty'>"+jt("an_p2h")+"</p>";
+  var sy=grp(l,function(x){return x.symbol}).sort(function(a,b){return b.n-a.n});
+  var b3=sy.length?"<div class='bar' style='align-items:center;gap:16px;flex-wrap:wrap'>"+donut(sy)+"<div>"+sy.map(function(r,i){return "<div class='row' style='gap:14px;border:0'><span><i class='dotc' style='background:"+PAL[i%PAL.length]+"'></i> "+esc(r.k)+"</span><span class='sub num'>"+r.n+"</span></div>"}).join("")+"</div></div>":"<p class='empty'>"+jt("an_nodata")+"</p>";
+  var gr=GR.map(function(g){var q=l.filter(function(x){return x.j&&x.j.grade===g}),r=st(q);r.k=g;return r}).filter(function(r){return r.n}),
+   b4=gr.length?gr.map(function(r){return hrow(esc(r.k),Math.abs(r.net)/(Math.max.apply(null,gr.map(function(z){return Math.abs(z.net)}))||1)*100,money(r.net)+" · "+Math.round(r.wr)+"%",r.net>=0?"var(--gain)":"var(--loss)",r.n<2,r.k+" · "+jt("an_row_n").replace("{n}",r.n))}).join(""):"<p class='empty'>"+jt("an_nodata")+"</p>";
+  var tt=grp(l.filter(function(x){return x.j&&x.j.tt}),function(x){return x.j.tt}),b5=tt.length?tt.map(function(r){return hrow(esc(lab(r.k)),r.wr,Math.round(r.wr)+"% · "+money(r.net),r.net>=0?"var(--gain)":"var(--loss)",r.n<2,lab(r.k)+" · "+jt("an_row_n").replace("{n}",r.n))}).join(""):"<p class='empty'>"+jt("an_nodata")+"</p>";
+  var rows=[];sg.forEach(function(r){if(r.k!==jt("an_nostrat"))rows.push([r.k,function(x){return x.strat&&sname(x.strat)===r.k}])});Object.keys(pb).forEach(function(k){rows.push([lab(k),function(x){return jv(x,"pb").indexOf(k)>-1}])});
+  var b6=rows.length?"<div class='scroll'><table><thead><tr><th></th>"+SES.map(function(c){return "<th>"+esc(lab(c))+"</th>"}).join("")+"</tr></thead><tbody>"+rows.map(function(r){return "<tr><td>"+esc(r[0])+"</td>"+SES.map(function(c){var q=l.filter(function(x){return r[1](x)&&x.j&&x.j.ses===c}),z=st(q);return q.length?"<td class='"+(z.n<5?"fade ":"")+(z.net>=0?"mg":"ml")+"'"+tip(esc(r[0])+" · "+lab(c)+" · "+money(z.net))+"><b class='num'>"+Math.round(z.wr)+"%</b> <span class='sub'>"+z.n+"</span></td>":"<td class='sub'>—</td>"}).join("")+"</tr>"}).join("")+"</tbody></table></div>":"<p class='empty'>"+jt("an_nodata")+"</p>";
+  var chips={};l.forEach(function(x){jv(x,"mk").forEach(function(t){chips[t]=1})});
+  var cf=Object.keys(chips).map(function(t){var w=l.filter(function(x){return jv(x,"mk").indexOf(t)>-1}),o=l.filter(function(x){return jv(x,"mk").indexOf(t)<0}),a=st(w),b=st(o);return{k:t,n:w.length,wr:a.wr,gap:o.length?a.wr-b.wr:null,net:a.net}}).sort(function(a,b){return (b.gap==null?-999:b.gap)-(a.gap==null?-999:a.gap)});
+  var b7=cf.length?cf.map(function(r){return "<div class='row"+(r.n<5?" fade":"")+"'"+tip(lab(r.k)+" · "+jt("an_row_n").replace("{n}",r.n))+"><span class='tg'>"+esc(lab(r.k))+"</span><span class='sub num'>"+Math.round(r.wr)+"% · "+jt("an_row_n").replace("{n}",r.n)+"</span><b class='num "+(r.gap==null?"":cls(r.gap))+"'>"+(r.gap==null?"—":(r.gap>=0?"+":"")+Math.round(r.gap)+" pts")+"</b></div>"}).join(""):"<p class='empty'>"+jt("an_p7h")+"</p>";
+  var cm={};l.forEach(function(x){var t=jv(x,"mk").concat(jv(x,"pb")).filter(function(v,i,a){return a.indexOf(v)===i}).sort();for(var i=0;i<t.length;i++)for(var j2=i+1;j2<t.length;j2++){var k=t[i]+" + "+t[j2];(cm[k]=cm[k]||[]).push(x)}});
+  var cb=Object.keys(cm).map(function(k){var r=st(cm[k]);r.k=k;return r}).filter(function(r){return r.n>=2}).sort(function(a,b){return b.net-a.net}).slice(0,8),
+   b8=cb.length?cb.map(function(r){return "<div class='row"+(r.n<5?" fade":"")+"'"+tip(r.k+" · "+jt("an_row_n").replace("{n}",r.n))+"><span>"+r.k.split(" + ").map(function(t){return "<span class='tg'>"+esc(lab(t))+"</span>"}).join(" + ")+"</span><span class='sub num'>"+Math.round(r.wr)+"% · "+r.n+"</span>"+mp(r.net)+"</div>"}).join(""):"<p class='empty'>"+jt("an_p7h")+"</p>";
+  return "<div class='anrow2'>"+box(jt("an_p1"),jt("an_p1s"),b1)+box(jt("an_p2"),jt("an_p2s"),b2)+box(jt("an_p3"),jt("an_p3s"),b3)+box(jt("an_p4"),"",b4)+box(jt("an_p5"),jt("an_p1s"),b5)+box(jt("an_p6"),jt("an_p6s"),b6,"span2")+box(jt("an_p7"),jt("an_p7s"),b7)+box(jt("an_p8"),jt("an_p8s"),b8)+"</div>"}
+
+/* Time */
+function anTime(l){var T0=l.filter(function(x){return x.time});
+  var H=[];for(var h=0;h<24;h++){var q=T0.filter(function(x){return +x.time.slice(0,2)===h}),z=st(q);z.h=h;H.push(z)}
+  var act=H.filter(function(z){return z.n}),best=act.slice().sort(function(a,b){return b.net-a.net})[0],worst=act.slice().sort(function(a,b){return a.net-b.net})[0],mx=Math.max.apply(null,H.map(function(z){return Math.abs(z.net)}).concat(1));
+  var hp=function(z){return pad(z.h)+":00–"+pad((z.h+1)%24)+":00"};
+  if(!act.length)return box(jt("an_t_best"),"","<p class='empty'>"+jt("an_t_notime")+"</p>");
+  var sel=AN.hr!=null?H[AN.hr]:best;
+  var svg="<svg viewBox='0 0 600 190' width='100%'><line x1='0' x2='600' y1='95' y2='95' style='stroke:var(--line)'/>"+H.map(function(z){var hh=Math.abs(z.net)/mx*80,x=8+z.h*24;return "<rect data-hr='"+z.h+"' x='"+x+"' y='"+(z.net>=0?95-hh:95)+"' width='18' height='"+Math.max(z.n?2:0,hh)+"' rx='3' style='fill:"+(z.net>=0?"var(--gain)":"var(--loss)")+";opacity:"+(z.n?(z.h===sel.h?1:.65):0)+";cursor:pointer'"+tip(hp(z)+" · "+money(z.net)+" · "+Math.round(z.wr)+"% · "+jt("an_row_n").replace("{n}",z.n))+"/>"}).join("")+H.map(function(z){return z.h%3===0?"<text x='"+(17+z.h*24)+"' y='186' text-anchor='middle' style='fill:var(--muted);font-size:10px'>"+pad(z.h)+"</text>":""}).join("")+"</svg>";
+  var stats=function(z){return "<div class='ledger'><div class='stat'><span>"+jt("d_net")+"</span><span>"+mp(z.net)+"</span></div><div class='stat'><span>"+jt("s_wr")+"</span><span class='num'>"+Math.round(z.wr)+"%</span></div><div class='stat'><span>"+jt("d_trades")+"</span><span class='num'>"+z.n+"</span></div><div class='stat'><span>"+jt("an_t_sel")+"</span><span class='num'>"+(z.n?hp(z):"—")+"</span></div></div>"};
+  var sg=SES.map(function(c){var q=l.filter(function(x){return x.j&&x.j.ses===c}),z=st(q);return "<div class='row'><span>"+esc(lab(c))+"</span><span class='sub num'>"+Math.round(z.wr)+"% · "+z.n+"</span>"+mp(z.net)+"</div>"}).join("");
+  var wd=grp(l,wdOf).sort(function(a,b){return a.k-b.k}).map(function(r){return "<div class='row'><span>"+wdName(r.k)+"</span><span class='sub num'>"+Math.round(r.wr)+"% · "+r.n+"</span>"+mp(r.net)+"</div>"}).join("");
+  return box("⏱ "+jt("an_t_best"),jt("an_t_sub"),"<div class='hl2'><div class='kv'>"+hp(best)+"</div><div class='sub'>"+mp(best.net)+" · "+Math.round(best.wr)+"% · "+jt("an_row_n").replace("{n}",best.n)+(worst&&worst!==best?" &nbsp;|&nbsp; "+jt("an_t_worst")+": "+hp(worst)+" "+mp(worst.net):"")+"</div></div>"+svg+stats(sel)+"<div class='anrow2' style='margin-top:12px'><div><h2>"+jt("an_t_sess")+"</h2>"+sg+"</div><div><h2>"+jt("an_t_wd")+"</h2>"+(wd||"<p class='empty'>"+jt("an_nodata")+"</p>")+"</div></div>")}
+
+/* Psychology */
+function emSt(l){var base=st(l).ex,m={};l.forEach(function(x){var e=emTags(x);e.neg.concat(e.pos).filter(function(v,i,a){return a.indexOf(v)===i}).forEach(function(t){(m[t]=m[t]||[]).push(x)})});
+  return{base:base,list:Object.keys(m).map(function(k){var r=st(m[k]);r.k=k;r.avg=r.n?r.net/r.n:0;r.d=r.avg-base;return r})}}
+function emBox(title,hl,rows,base,neg){var mx=Math.max.apply(null,rows.map(function(r){return Math.abs(r.d)}).concat(1));
+  var top=rows[0],body="<div class='hl2'>"+(top?"<div class='hint'>"+hl+"</div><div class='kv'>"+esc(lab(top.k))+"</div><div class='sub'>"+jt("an_impact").replace("{n}",top.n).replace("{v}",money(top.avg)).replace("{d}",(top.d>=0?"+":"")+money(top.d).replace("+","")).replace("{w}",Math.round(top.wr))+"</div>":"<p class='empty'>"+jt("an_nopsy")+"</p>")+"</div>";
+  body+=rows.map(function(r){return hrow(esc(lab(r.k)),Math.abs(r.d)/mx*100,(r.d>=0?"+":"")+money(r.d).replace("+","")+" · "+r.n,r.d>=0?"var(--gain)":"var(--loss)",r.n<2,lab(r.k)+" · "+money(r.net))}).join("");
+  return box(title,jt("an_normal").replace("{v}",money(base)),body)}
+function anPsy(l){var e=emSt(l),neg=e.list.filter(function(r){return NEG.indexOf(r.k)>-1}).sort(function(a,b){return a.net-b.net}),pos=e.list.filter(function(r){return NEG.indexOf(r.k)<0}).sort(function(a,b){return b.net-a.net});
+  return "<p class='sub' style='margin:0 0 10px'>"+jt("an_psy_sub")+"</p><div class='anrow2'>"+emBox(jt("an_neg"),jt("an_costly"),neg,e.base,true)+emBox(jt("an_pos"),jt("an_profit"),pos,e.base,false)+"</div>"}
+
+/* Insights */
+function anPatterns(l){var o=[],cm={};
+  l.forEach(function(x){var t=jv(x,"mk").concat(jv(x,"pb")).filter(function(v,i,a){return a.indexOf(v)===i}).sort();for(var i=0;i<t.length;i++)for(var j2=i+1;j2<t.length;j2++){var k=t[i]+" + "+t[j2];(cm[k]=cm[k]||[]).push(x)}});
+  var cb=Object.keys(cm).map(function(k){var r=st(cm[k]);r.k=k;return r}).filter(function(r){return r.n>=2}).sort(function(a,b){return b.net-a.net});
+  if(cb.length){var b=cb[0];o.push(jf("ip_best",{c:b.k.split(" + ").map(lab).join(" + "),v:money(b.net),n:b.n}));var w=cb[cb.length-1];if(cb.length>1&&w.net<0)o.push(jf("ip_worst",{c:w.k.split(" + ").map(lab).join(" + "),v:money(w.net),n:w.n}))}
+  var nx=[],all=st(l);for(var i=2;i<l.length;i++)if(l[i-1].pnl<0&&l[i-2].pnl<0)nx.push(l[i]);if(nx.length>=3)o.push(jf("ip_seq",{w:Math.round(st(nx).wr),b:Math.round(all.wr)}));
+  var c1=l.filter(function(x){return x.j&&(x.j.grade==="A"||x.j.grade==="A+")&&x.pnl<0}).length;if(c1)o.push(jf("ip_c1",{n:c1}));
+  var c2=l.filter(function(x){return x.lvl&&x.pnl<0}).length;if(c2>=3)o.push(jf("ip_c2",{n:c2}));
+  var c3=l.filter(function(x){return x.j&&(x.j.grade==="C"||x.j.grade==="F")&&x.pnl>0}).length;if(c3)o.push(jf("ip_c3",{n:c3}));
+  var rv=l.filter(function(x){return x.j&&x.j.rev});if(rv.length)o.push(jf("ip_rev",{n:rv.length,v:money(rv.reduce(function(a,x){return a+x.pnl},0))}));
+  return o}
+function anInsights(l){var pt=anPatterns(l),a=AN.ai;
+  return "<div class='anrow2'>"+box(jt("an_ai_pat"),jt("an_ai_pats"),pt.length?"<ul>"+pt.map(function(x){return "<li>"+esc(x)+"</li>"}).join("")+"</ul>":"<p class='empty'>"+jt("ip_none")+"</p>")
+   +box(jt("an_ai_an"),jt("an_ai_ans"),"<div id='anaitxt' class='pre'>"+(a?esc(a.text):"")+"</div>"+(a?"<div class='hint'>"+jt("an_gen_at")+" "+esc(a.ts)+"</div>":"")+"<div class='bar' style='margin-top:8px'><button type='button' class='primary' id='angen'>"+jt(a?"an_regen":"an_gen")+"</button><span class='hint' id='angs'></span></div>")+"</div>"}
+$("anroot").addEventListener("click",async function(e){var b=e.target.closest&&e.target.closest("#angen");if(!b)return;var l=anF(trades);if(l.length<5){$("angs").textContent=jt("an_gen_min");return}
+  var sm=null;try{sm=window.claude?await claude.use("sample"):null}catch(x){}if(!sm){$("angs").textContent=jt("an_gen_fail");return}$("angs").textContent=jt("an_gen_wait");
+  var pt=anPatterns(l),pr="You are a trading coach reading a trader's journal. Give a concise analysis with three parts: (1) the trader's edge, (2) the biggest leaks, (3) three concrete next moves. Be specific and use the numbers. Judge process as well as outcome. Educational coaching, not financial advice. Reply in "+LN[lang]+".\n\nDetected patterns:\n"+pt.join("\n")+"\n\n"+ctx();
+  try{var r=await sm([{role:"user",content:pr}],{cache:false,onText:function(o){$("anaitxt").textContent=o.text}});AN.ai={text:r.text,ts:ymd(new Date())};wr("journal:aian:"+me,AN.ai);anRender()}catch(x2){$("angs").textContent=jt("an_gen_fail")}});
+
+/* Risk */
+function anRisk(l){
+  var P=l.filter(function(x){var q=x.j||{};return q.heat!==""&&q.heat!=null&&q.run!==""&&q.run!=null&&!isNaN(parseFloat(q.heat))&&!isNaN(parseFloat(q.run))}),b1;
+  if(!P.length)b1="<p class='empty'>"+jt("an_noheat")+"</p>";
+  else{var W=560,H=300,xm=Math.max(1.5,Math.max.apply(null,P.map(function(x){return parseFloat(x.j.heat)}))*1.1),ym=Math.max(2,Math.max.apply(null,P.map(function(x){return parseFloat(x.j.run)}))*1.1),X=function(v){return 44+v/xm*(W-64)},Y=function(v){return H-30-v/ym*(H-50)};
+    b1="<svg viewBox='0 0 "+W+" "+H+"' width='100%'>"+[0,1,2,3,4,5].filter(function(v){return v<=ym}).map(function(v){return "<line x1='44' x2='"+(W-20)+"' y1='"+Y(v)+"' y2='"+Y(v)+"' style='stroke:var(--line)'/><text x='38' y='"+(Y(v)+3)+"' text-anchor='end' style='fill:var(--muted);font-size:10px'>"+v+"R</text>"}).join("")
+     +[0,0.5,1,1.5,2,3].filter(function(v){return v<=xm}).map(function(v){return "<text x='"+X(v)+"' y='"+(H-12)+"' text-anchor='middle' style='fill:var(--muted);font-size:10px'>"+v+"R</text>"}).join("")
+     +"<line x1='"+X(1)+"' x2='"+X(1)+"' y1='14' y2='"+(H-30)+"' style='stroke:var(--loss)' stroke-dasharray='5'/><text x='"+(X(1)+4)+"' y='24' style='fill:var(--loss);font-size:10px'>"+jt("an_stop")+"</text>"
+     +P.map(function(x){var hh=parseFloat(x.j.heat),rr=parseFloat(x.j.run),w=x.pnl>=0;return "<circle cx='"+X(hh).toFixed(1)+"' cy='"+Y(rr).toFixed(1)+"' r='6' style='fill:"+(w?"var(--gain)":"var(--loss)")+";opacity:.85"+(hh>=1?";stroke:var(--ink);stroke-width:1.5":"")+"'"+tip(x.symbol+" · "+x.date+" · "+money(x.pnl)+" · heat "+hh+"R · run "+rr+"R"+(hh>=1?" · "+jt("an_hit"):""))+"/>"}).join("")+"</svg>"}
+  var by={};l.forEach(function(x){by[x.date]=(by[x.date]||0)+x.pnl});var ds=Object.keys(by).sort(),eq=0,pk=0,pts=[0],lbs=["—"],dd=[0],hw=0,mdd=0,cur=0;
+  ds.forEach(function(d){eq+=by[d];if(eq>pk){pk=eq;hw++}cur=eq-pk;mdd=Math.min(mdd,cur);pts.push(cur);lbs.push(d+" · "+money(eq)+" · "+jt("an_curdd")+" "+money(cur))});
+  var b2=ds.length?areaSvg(pts,lbs,"d",true)+"<div class='ledger' style='margin-top:8px'><div class='stat'><span>"+jt("an_maxdd")+"</span><span>"+mp(mdd)+"</span></div><div class='stat'><span>"+jt("an_curdd")+"</span><span>"+mp(cur)+"</span></div><div class='stat'><span>"+jt("an_hw")+"</span><span class='num'>"+hw+"</span></div></div>":"<p class='empty'>"+jt("an_nodata")+"</p>";
+  return "<div class='anrow2'>"+box(jt("an_r1"),jt("an_r1s"),b1)+box(jt("an_r2"),jt("an_r2s"),b2)+"</div>"}
+
+/* shell */
+function anSel(id,lb,l,cur){return "<label>"+lb+"<select id='"+id+"'>"+opts(l,cur)+"</select></label>"}
+function anRender(){var r=$("anroot");if(!r)return;AN.ai=AN.ai||rd("journal:aian:"+me,null);var all=anF(trades),n=all.length;
+  var syms=[],seen={};trades.forEach(function(x){if(!seen[x.symbol]){seen[x.symbol]=1;syms.push([x.symbol,x.symbol])}});
+  var fp=AN.open?"<div class='fpanel'>"+anSel("anper",jt("an_period"),[["all",jt("an_p_all")],["7",jt("an_p_7")],["30",jt("an_p_30")],["m",jt("an_p_m")],["y",jt("an_p_y")]],AN.per)+anSel("anacc",jt("account"),[["",jt("sc_all")]].concat(accts().map(function(a){return [a.id,a.name]})),AN.acct)+anSel("ansym",jt("symbol"),[["",jt("sc_all")]].concat(syms),AN.sym)+anSel("anstr",jt("strategy"),[["",jt("sc_all")]].concat(strats.map(function(x){return [x.id,x.name]})),AN.strat)+anSel("anses",jt("ses"),[["",jt("sc_all")]].concat(SES.map(function(v){return [v,lab(v)]})),AN.ses)+"<button type='button' id='anreset'>"+jt("an_reset")+"</button></div>":"";
+  r.innerHTML="<div class='srh'><div><h1>"+jt("an_title")+"</h1><div class='sub'>"+jt(n===1?"an_c1":"an_cn").replace("{n}",n)+"</div></div><div class='bar'><button type='button' class='chip' id='anhide'>👁 "+jt(JS.hide?"show":"hide")+"</button><span class='badge2'>"+jt("an_unlocked")+"</span></div></div>"
+   +"<div class='anbar'><div class='bar' style='justify-content:space-between'><div class='apills'>"+ANT.map(function(t){return "<button type='button' data-an='"+t[0]+"' aria-pressed='"+(AN.tab===t[0])+"'>"+jt(t[1])+"</button>"}).join("")+"</div><button type='button' class='scfb' id='anfb'>"+jt("an_filters")+"</button></div>"+fp+"</div>"
+   +"<div id='anbody'>"+ANT.map(function(t){var c=t[0]==="overview"?anOverview(all):t[0]==="performance"?anPerf(all):t[0]==="time"?anTime(all):t[0]==="psych"?anPsy(all):t[0]==="insights"?anInsights(all):anRisk(all);return "<div class='ansec rv"+(AN.seen&&AN.seen[t[0]]?" in":"")+"' id='ans-"+t[0]+"' data-sec='"+t[0]+"'><h2 class='anh'>"+jt(t[1])+"</h2>"+c+"</div>"}).join("")+"</div><div class='antip' id='antip' hidden></div>";anReveal()}
+$("anroot").addEventListener("click",function(e){var t0=e.target,b=t0.closest&&t0.closest("button"),c=t0.closest&&t0.closest("[data-cd]"),hr=t0.closest&&t0.closest("[data-hr]");
+  if(hr){AN.hr=+hr.getAttribute("data-hr");return anRender()}
+  if(c){AN.day=AN.day===c.getAttribute("data-cd")?null:c.getAttribute("data-cd");return anRender()}
+  if(!b)return;var an=b.getAttribute("data-an");if(an){AN.tab=an;anPills();var sec=document.getElementById("ans-"+an);if(sec&&sec.scrollIntoView)sec.scrollIntoView({behavior:"smooth",block:"start"});return}
+  if(b.id==="anfb"){AN.open=!AN.open;return anRender()}
+  if(b.id==="anhide"){JS.hide=!JS.hide;wr("journal:hide",JS.hide);applyHide();return anRender()}
+  if(b.id==="anreset"){AN.per="all";AN.acct=AN.sym=AN.strat=AN.ses="";return anRender()}
+  var cm=b.getAttribute("data-acm");if(cm){var p=AN.cm.split("-"),d=new Date(+p[0],+p[1]-1+ +cm,1);AN.cm=d.getFullYear()+"-"+pad(d.getMonth()+1);anRender()}});
+function anPills(){Array.prototype.forEach.call(document.querySelectorAll("#anroot [data-an]"),function(b){b.setAttribute("aria-pressed",b.getAttribute("data-an")===AN.tab)})}
+var anIO=null;
+function anReveal(){AN.seen=AN.seen||{};var els=document.querySelectorAll("#anbody .ansec.rv:not(.in)");if(!els.length)return;
+  if(!("IntersectionObserver" in window)||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){Array.prototype.forEach.call(els,function(e){e.classList.add("in");AN.seen[e.getAttribute("data-sec")]=1});return}
+  if(anIO)anIO.disconnect();anIO=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");AN.seen[en.target.getAttribute("data-sec")]=1;anIO.unobserve(en.target)}})},{threshold:.08,rootMargin:"0px 0px -6% 0px"});
+  Array.prototype.forEach.call(els,function(e){anIO.observe(e)})}
+var anRaf=0;
+function anSpy(){if($("v-analytics").hidden)return;var secs=document.querySelectorAll("#anbody .ansec");if(!secs.length)return;var cur=secs[0].getAttribute("data-sec"),line=(($("anroot").querySelector(".anbar")||{}).getBoundingClientRect?$("anroot").querySelector(".anbar").getBoundingClientRect().bottom:90)+24;
+  Array.prototype.forEach.call(secs,function(x){if(x.getBoundingClientRect().top<=line)cur=x.getAttribute("data-sec")});
+  if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4&&window.scrollY>0)cur=secs[secs.length-1].getAttribute("data-sec");
+  if(cur!==AN.tab){AN.tab=cur;anPills()}}
+window.addEventListener("scroll",function(){if(anRaf)return;anRaf=requestAnimationFrame(function(){anRaf=0;anSpy()})},{passive:true});
+$("anroot").addEventListener("change",function(e){var M={anper:"per",anacc:"acct",ansym:"sym",anstr:"strat",anses:"ses"}[e.target.id];if(M){AN[M]=e.target.value;anRender()}});
+$("anroot").addEventListener("mousemove",function(e){var t=document.getElementById("antip"),h=e.target.closest&&e.target.closest("[data-tip]");if(!t)return;if(!h){t.hidden=true;return}t.textContent=h.getAttribute("data-tip");t.hidden=false;t.style.left=(e.clientX+12)+"px";t.style.top=(e.clientY+14)+"px"});
+$("anroot").addEventListener("mouseleave",function(){var t=document.getElementById("antip");if(t)t.hidden=true});
+
 function ins(l,s){var o=[],W=grp(l,wdOf);
   if(W.length>1){o.push(fmt("أفضل يوم لك: {d} بصافي {v}",{d:wdName(W[0].k),v:money(W[0].net)}));var lw=W[W.length-1];if(lw.net<0)o.push(fmt("أضعف يوم لك: {d} بصافي {v}",{d:wdName(lw.k),v:money(lw.net)}))}
   var em=grp(l,function(x){return x.emo}).filter(function(r){return r.n>=2&&r.net<0});
@@ -816,18 +1031,7 @@ function ins(l,s){var o=[],W=grp(l,wdOf);
   var sg=grp(l,function(x){return x.strat?sname(x.strat):null});if(sg.length>1)o.push(fmt("أفضل استراتيجية: {n} بصافي {v}",{n:sg[0].k,v:money(sg[0].net)}));
   var bd=grp(l,function(x){return x.date}).sort(function(p,q){return q.n-p.n})[0];if(bd&&bd.n>=5)o.push(fmt("أكثر يوم تداولت فيه: {d} ({n} صفقات). راقب الإفراط بالتداول.",{d:bd.k,n:bd.n}));
   return o.length?"<ul>"+o.map(function(x){return "<li>"+esc(x)+"</li>"}).join("")+"</ul><p class='hint'>الملاحظات محسوبة من بياناتك وتزداد دقة مع عدد الصفقات.</p>":"<p class='empty'>سجّل المزيد من الصفقات (مع الوقت والحالة النفسية) لتظهر ملاحظات مفيدة.</p>"}
-function anRender(){
-  document.querySelectorAll("[data-an]").forEach(function(b){if(b.getAttribute("data-an")===an)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
-  var l=plist(),h;
-  if(!l.length&&an!=="compare"){$("anbody").innerHTML="<p class='empty'>لا توجد بيانات كافية.</p>";tr($("anbody"));return}
-  var s=st(l);
-  if(an==="overview")h=kpis(s)+curve(l);
-  else if(an==="performance")h="<h2>حسب الرمز</h2>"+gtable(grp(l,function(x){return x.symbol}),function(r){return esc(r.k)})+"<h2>حسب الاستراتيجية</h2>"+gtable(grp(l,function(x){return x.strat?sname(x.strat):null}),function(r){return esc(r.k)})+"<h2>حسب الاتجاه</h2>"+gtable(grp(l,function(x){return x.dir}),function(r){return esc(r.k)});
-  else if(an==="compare")h=cmp(l);else if(an==="time")h=timeV(l);else if(an==="psych")h=psy(l);else if(an==="insights")h=ins(l,s);else h=riskV(l);
-  $("anbody").innerHTML=h;tr($("anbody"));
-}
-$("antabs").addEventListener("click",function(e){var a=e.target.getAttribute&&e.target.getAttribute("data-an");if(a){an=a;anRender()}});
-$("anp").addEventListener("change",anRender);
+
 
 /* AI assistant */
 var LN={ar:"Arabic",en:"English",fr:"French",tr:"Turkish"},P={trades:"Analyze my recent trades: strengths, weaknesses, and the 3 most valuable changes I should make.",psych:"Analyze my trading psychology from my emotions, entry discipline and behaviour patterns. Be direct and kind.",plan:"Build a short, concrete action plan for my next week of trading based on my data."};
@@ -1086,6 +1290,7 @@ $("sampleclr").addEventListener("click",function(){if(!confirm(t("مسح كل ص
 /* ---- Trade Journal page: stream, modals, drafts, scores ---- */
 var JD={};[["title", "الدفتر", "Trade Journal"], ["count", "صفقة مسجّلة", "trades logged"], ["t_trades", "الصفقات", "Trades"], ["t_daily", "يومي", "Daily"], ["t_weekly", "أسبوعي", "Weekly"], ["quick", "⚡ تسجيل سريع", "⚡ Quick Log"], ["log", "+ تسجيل صفقة", "+ Log Trade"], ["drafts", "المسودات", "Drafts"], ["untitled", "صفقة بدون عنوان", "Untitled trade"], ["newtrade", "صفقة جديدة", "New trade"], ["cont", "متابعة", "Continue"], ["del", "حذف", "Delete"], ["s_total", "إجمالي الربح", "Total P&L"], ["s_wr", "نسبة الربح", "Win rate"], ["s_rr", "متوسط R للرابحة", "Avg Win RR"], ["s_awl", "متوسط الربح / الخسارة", "Avg Win / Loss"], ["hide", "إخفاء الأرباح", "Hide P&L"], ["show", "إظهار الأرباح", "Show P&L"], ["q_ph", "بحث...", "Search..."], ["f_all", "كل النتائج", "All results"], ["f_win", "رابحة", "Wins"], ["f_loss", "خاسرة", "Losses"], ["f_acc", "كل الحسابات", "All accounts"], ["f_gr", "كل التقييمات", "All grades"], ["lay_g", "شبكة", "Grid"], ["lay_l", "قائمة", "List"], ["none", "لا توجد صفقات مطابقة.", "No matching trades."], ["study", "دراسة", "Study"], ["edit", "تعديل", "Edit"], ["ai", "مراجعة AI", "AI review"], ["win", "ربح", "Win"], ["loss", "خسارة", "Loss"], ["score", "التقييم", "Score"], ["ch_title", "تسجيل صفقة", "Log a trade"], ["basic", "أساسي", "Basic"], ["adv", "متقدم", "Advanced"], ["notrade", "بدون صفقة", "No trade"], ["basic_d", "الدخول والخروج والتقييم والملاحظات", "Entry, exit, grade and notes"], ["adv_d", "كل التفاصيل: المخاطر والسيناريو والنفسية", "Everything: risk, playbook, psychology"], ["nt_d", "يوم بدون تداول", "A day without trading"], ["quick_t", "تسجيل سريع", "Quick Log"], ["symbol", "الرمز", "Symbol"], ["date", "التاريخ", "Date"], ["dir", "الاتجاه", "Direction"], ["long", "شراء (Long)", "Long (Buy)"], ["short", "بيع (Short)", "Short (Sell)"], ["pnl", "الربح أو الخسارة ($)", "P&L ($)"], ["grade", "تقييم الصفقة", "Trade grade"], ["strategy", "الاستراتيجية", "Strategy"], ["account", "الحساب", "Account"], ["no_strat", "ما في استراتيجيات. أضف من تبويب الاستراتيجيات.", "No strategies yet. Add some in the Strategy tab."], ["save", "حفظ", "Save"], ["cancel", "إلغاء", "Cancel"], ["savedraft", "حفظ كمسودة", "Save draft"], ["b_info", "معلومات الصفقة", "Trade info"], ["cls", "نوع الأصل", "Asset class"], ["tt", "نوع الصفقة", "Trade type"], ["ses", "الجلسة", "Session"], ["plan", "التزمت بخطتي؟", "Followed my plan?"], ["yes", "نعم", "Yes"], ["no", "لا", "No"], ["b_exec", "التنفيذ", "Execution"], ["entry", "سعر الدخول", "Entry price"], ["exit", "سعر الخروج", "Exit price"], ["lots", "حجم اللوت", "Lot size"], ["prr", "RR المخطط", "Planned RR"], ["rrr", "RR المحقق", "Realized RR"], ["auto", "يُحسب تلقائياً إذا تركته فارغاً", "Auto-calculated if left empty"], ["b_risk", "التنفيذ والمخاطر", "Execution & risk"], ["sl", "وقف الخسارة", "Stop loss"], ["tp", "جني الأرباح", "Take profit"], ["xr", "سبب الخروج", "Exit reason"], ["b_pb", "السيناريو", "Playbook"], ["add", "+ إضافة", "+ Add"], ["b_mk", "تحليل السوق", "Market breakdown"], ["b_rev", "الدخول بعد خسارة", "Post-loss entry"], ["rev_off", "لا انتقام", "No revenge trade"], ["rev_on", "صفقة انتقام (مُعلَّمة)", "Revenge trade (flagged)"], ["b_emo", "المشاعر والنفسية", "Emotion & psychology"], ["pos_t", "ما ساعدك على الانضباط", "What kept you disciplined"], ["neg_t", "ما أضرّ بالصفقة", "What hurt this trade"], ["notes", "ملاحظات", "Notes"], ["shot", "لقطة الشاشة", "Screenshot"], ["drop", "اسحب لقطة الشاشة هنا أو اضغط للاختيار", "Drop your screenshot here or click to choose"], ["nt_t", "يوم بدون تداول", "No trade day"], ["ev_t", "تقييم اليوم", "Day evaluation"], ["ev_rules", "التزمت بالقواعد", "Followed the rules"], ["ev_missed", "فوّت صفقة", "Missed trade"], ["ev_off", "يوم إجازة", "Day off"], ["e_sd", "أدخل الرمز والتاريخ.", "Enter a symbol and date."], ["e_pnl", "أدخل الربح أو الخسارة (أو الأسعار واللوت).", "Enter the P&L (or entry, exit and lots)."], ["e_guard", "الحواجز الواقية: إضافة الصفقات موقوفة اليوم.", "Guardrails: adding trades is paused today."], ["e_shot", "تم حفظ الصفقة، لكن تعذّر حفظ الصورة (مساحة التخزين ممتلئة).", "Trade saved, but the image couldn't be stored (storage is full)."], ["d_trades", "الصفقات", "Trades"], ["d_net", "الصافي", "Net"], ["d_wr", "نسبة الربح", "Win rate"], ["d_rules", "القواعد محترمة", "Rules kept"], ["d_score", "متوسط التقييم", "Avg score"], ["w_week", "الأسبوع", "Week"], ["w_days", "أيام التداول", "Trading days"], ["l_Forex", "فوركس", "Forex"], ["l_Crypto", "كريبتو", "Crypto"], ["l_Futures", "عقود آجلة", "Futures"], ["l_Metals", "معادن", "Metals"], ["l_Indices", "مؤشرات", "Indices"], ["l_Stocks", "أسهم", "Stocks"], ["l_Scalp", "سكالب", "Scalp"], ["l_Day", "داي تريد", "Day"], ["l_Swing", "سوينغ", "Swing"], ["l_Asia", "آسيا", "Asia"], ["l_London", "لندن", "London"], ["l_NY AM", "نيويورك صباحاً", "NY AM"], ["l_NY PM", "نيويورك مساءً", "NY PM"], ["l_Reversal", "انعكاس", "Reversal"], ["l_Continuation", "استمرار", "Continuation"], ["l_Retracement", "تصحيح", "Retracement"], ["l_Manipulation", "تلاعب", "Manipulation"], ["l_Patient", "صبور", "Patient"], ["l_Disciplined", "منضبط", "Disciplined"], ["l_Focused", "مركّز", "Focused"], ["l_Calm", "هادئ", "Calm"], ["l_Confident", "واثق", "Confident"], ["l_Rule following", "ملتزم بالقواعد", "Rule following"], ["l_Selective", "انتقائي", "Selective"], ["l_Prepared", "مستعد", "Prepared"], ["l_Fomo", "خوف الفوات", "Fomo"], ["l_Revenge", "انتقام", "Revenge"], ["l_Fearful", "خائف", "Fearful"], ["l_Impatient", "متسرع", "Impatient"], ["l_Overconfident", "مفرط الثقة", "Overconfident"], ["l_Distracted", "مشتت", "Distracted"], ["l_Anxious", "قلق", "Anxious"]].forEach(function(r){JD[r[0]]=[r[1],r[2]]});
 SGT.forEach(function(r){JD[r[0]]=[r[1],r[2]]});
+ANJ.forEach(function(r){JD[r[0]]=[r[1],r[2]]});
 function jt(k){var d=JD[k];return d?(lang==="ar"?d[0]:d[1]):k}
 function lab(v){return JD["l_"+v]?jt("l_"+v):v}
 function qa(x){return esc(x).replace(/'/g,"&#39;")}
@@ -1099,7 +1304,7 @@ function addCust(g,v){var c=rd("journal:chips:"+me,{});c[g]=(c[g]||[]).concat(v)
 function drafts(){return rd("journal:drafts:"+me,[])}
 function rmDraft(id){if(id)wr("journal:drafts:"+me,drafts().filter(function(x){return x.id!==id}))}
 function ntl(){return rd("journal:nt:"+me,[])}
-function dflt(d){return Object.assign({sym:"",date:(JS.view==="daily"||JS.view==="sel")?JS.day:ymd(new Date()),dir:"Buy",cls:"Forex",tt:"Scalp",ses:"NY AM",plan:true,acct:"",strat:"",entry:"",exit:"",lots:"",pnl:"",prr:"",rrr:"",sl:"",tp:"",xr:"",pb:[],mk:[],rev:false,pos:[],neg:[],grade:"",notes:"",eval:""},d||{})}
+function dflt(d){return Object.assign({sym:"",date:(JS.view==="daily"||JS.view==="sel")?JS.day:ymd(new Date()),dir:"Buy",cls:"Forex",tt:"Scalp",ses:"NY AM",plan:true,acct:"",strat:"",entry:"",exit:"",lots:"",pnl:"",prr:"",rrr:"",sl:"",tp:"",heat:"",run:"",xr:"",pb:[],mk:[],rev:false,pos:[],neg:[],grade:"",notes:"",eval:""},d||{})}
 
 /* score (rules-based, rewards process not outcome) */
 function tScore(x,sh){var q=x.j||{},rr=x.risk>0?x.pnl/x.risk:null,g={"A+":20,"A":16,"B":12,"C":8,"F":0}[q.grade],v=0;
@@ -1134,7 +1339,7 @@ function formHtml(mode,d){d=dflt(d);var A=mode==="adv";
    +"<div class='fg' style='margin-top:10px'><div><div class='hint'>"+jt("dir")+"</div>"+dirBtns(d.dir)+"</div><div><div class='hint'>"+jt("plan")+"</div><div class='bar'><button type='button' class='chip pos' data-tg='plan' aria-pressed='"+d.plan+"'>"+jt("yes")+" / "+jt("no")+"</button></div></div></div></div>";
   var ex="<div class='jbox'><h3>"+jt(A?"b_risk":"b_exec")+"</h3><div class='fg'><label>"+jt("entry")+inp("entry",d.entry,"number","step='any'")+"</label><label>"+jt("exit")+inp("exit",d.exit,"number","step='any'")+"</label><label>"+jt("lots")+inp("lots",d.lots,"number","step='any'")+"</label><label>"+jt("pnl")+inp("pnl",d.pnl,"number","step='any' placeholder='"+qa(jt("auto"))+"'")+"</label>"
    +"<label>"+jt("prr")+inp("prr",d.prr,"number","step='any'")+"</label><label>"+jt("rrr")+inp("rrr",d.rrr,"number","step='any'")+"</label>"
-   +(A?"<label>"+jt("sl")+inp("sl",d.sl,"number","step='any'")+"</label><label>"+jt("tp")+inp("tp",d.tp,"number","step='any'")+"</label></div><label style='margin-top:10px'>"+jt("xr")+"<textarea name='xr' rows='2'>"+esc(d.xr)+"</textarea></label></div>":"</div></div>");
+   +(A?"<label>"+jt("sl")+inp("sl",d.sl,"number","step='any'")+"</label><label>"+jt("tp")+inp("tp",d.tp,"number","step='any'")+"</label><label>"+jt("f_heat")+inp("heat",d.heat,"number","step='any'")+"</label><label>"+jt("f_run")+inp("run",d.run,"number","step='any'")+"</label></div><label style='margin-top:10px'>"+jt("xr")+"<textarea name='xr' rows='2'>"+esc(d.xr)+"</textarea></label></div>":"</div></div>");
   var adv=A?"<div class='jbox'><h3>"+jt("b_pb")+"</h3>"+chipRow("pb",d.pb)+"</div><div class='jbox'><h3>"+jt("b_mk")+"</h3>"+chipRow("mk",d.mk)+"</div>"
    +"<div class='jbox'><h3>"+jt("b_rev")+"</h3><div class='bar'><button type='button' class='chip rev' data-tg='rev' aria-pressed='"+d.rev+"'>"+jt(d.rev?"rev_on":"rev_off")+"</button></div></div>"
    +"<div class='jbox'><h3>"+jt("b_emo")+"</h3><div class='hint'>"+jt("pos_t")+"</div>"+chipRow("pos",d.pos)+"<div class='hint' style='margin-top:10px'>"+jt("neg_t")+"</div>"+chipRow("neg",d.neg)+"</div>":"";
@@ -1145,7 +1350,7 @@ function ntHtml(d){d=dflt(d);return "<h2 style='margin:0 0 12px'>"+jt("nt_t")+"<
 function showShot(){var d=$("drop");if(!d)return;d.innerHTML=LT.shot?"<img alt='' src='"+LT.shot+"'>":esc(jt("drop"))}
 function collect(){var m=$("jmb"),g=function(n){var e=m.querySelector("[name='"+n+"']");return e?e.value:""},pr=function(q){var e=m.querySelector(q);return e?e.getAttribute("aria-pressed")==="true":null};
   var db=m.querySelector("[data-dir][aria-pressed='true']"),gb=m.querySelector("[data-grade][aria-pressed='true']"),eb=m.querySelector("[data-ev][aria-pressed='true']"),sb=m.querySelector("[data-st][aria-pressed='true']"),pl=pr("[data-tg='plan']"),rv=pr("[data-tg='rev']");
-  return{mode:LT.mode,sym:g("sym").trim().toUpperCase(),date:g("date"),dir:db?db.getAttribute("data-dir"):"Buy",cls:g("cls"),tt:g("tt"),ses:g("ses"),plan:pl==null?true:pl,acct:g("acct"),strat:sb?sb.getAttribute("data-st"):g("strat"),entry:g("entry"),exit:g("exit"),lots:g("lots"),pnl:g("pnl"),prr:g("prr"),rrr:g("rrr"),sl:g("sl"),tp:g("tp"),xr:g("xr"),pb:selOf("pb"),mk:selOf("mk"),rev:!!rv,pos:selOf("pos"),neg:selOf("neg"),grade:gb?gb.getAttribute("data-grade"):"",notes:g("notes"),eval:eb?eb.getAttribute("data-ev"):""}}
+  return{mode:LT.mode,sym:g("sym").trim().toUpperCase(),date:g("date"),dir:db?db.getAttribute("data-dir"):"Buy",cls:g("cls"),tt:g("tt"),ses:g("ses"),plan:pl==null?true:pl,acct:g("acct"),strat:sb?sb.getAttribute("data-st"):g("strat"),entry:g("entry"),exit:g("exit"),lots:g("lots"),pnl:g("pnl"),prr:g("prr"),rrr:g("rrr"),sl:g("sl"),tp:g("tp"),heat:g("heat"),run:g("run"),xr:g("xr"),pb:selOf("pb"),mk:selOf("mk"),rev:!!rv,pos:selOf("pos"),neg:selOf("neg"),grade:gb?gb.getAttribute("data-grade"):"",notes:g("notes"),eval:eb?eb.getAttribute("data-ev"):""}}
 function dirty(F){return !!(F.sym||F.pnl||F.entry||F.exit||F.notes||F.pb.length||F.mk.length||F.pos.length||F.neg.length||F.grade||F.rev||F.eval)}
 function openLog(mode,d,edit,did){LT={mode:mode||"",shot:"",draft:did||null,edit:edit||null};var m=$("jmb");
   m.innerHTML=!mode?choiceHtml():mode==="quick"?quickHtml(d):mode==="nt"?ntHtml(d):formHtml(mode,d);
@@ -1318,7 +1523,7 @@ $("jroot").addEventListener("click",function(e){var el=e.target,b=el.closest&&el
   else if(a==="del"&&confirm(t("حذف هذه الصفقة؟"))){trades=trades.filter(function(x){return x.id!==id});saveShot(id,null);saveT();renderAll()}});
 $("jroot").addEventListener("input",function(e){if(e.target.id==="jq"){JS.q=e.target.value;renderStream()}});
 $("jroot").addEventListener("change",function(e){var i=e.target.id,m=e.target.getAttribute&&e.target.getAttribute("data-msel"),rt=e.target.getAttribute&&e.target.getAttribute("data-rvt");
-  if(m){var ix=JS.sel.indexOf(m);if(e.target.checked&&ix<0)JS.sel.push(m);else if(!e.target.checked&&ix>-1)JS.sel.splice(ix,1);var sy=window.pageYOffset;renderJournal();try{window.scrollTo(0,sy)}catch(x){}return}
+  if(m){var ix=JS.sel.indexOf(m);if(e.target.checked&&ix<0)JS.sel.push(m);else if(!e.target.checked&&ix>-1)JS.sel.splice(ix,1);var sy=window.pageYOffset;renderJournal();try{window.scrollTo({top:sy,behavior:"instant"})}catch(x){try{window.scrollTo(0,sy)}catch(y){}}return}
   if(rt){var o={};o[rt]=e.target.value;saveRv(e.target.closest(".dpanel").getAttribute("data-ds"),o);return}
   if(i==="jres")JS.res=e.target.value;else if(i==="jacc")JS.acc=e.target.value;else if(i==="jgr")JS.gr=e.target.value;else return;renderStream()});
 
@@ -1732,6 +1937,22 @@ $("acard").addEventListener("click",function(e){var b=e.target.closest&&e.target
   var po=b.getAttribute("data-apo");if(po){var al=accts();al.forEach(function(x){if(x.id===po)x.po=!x.po});wr("journal:accts:"+me,al);renderAccts()}});
 [["ac_none","ما في حساب نشط.","No active account."],["ac_add","أضف حساباً من الإعدادات","Add an account in Settings"],["ac_paid","تم السحب","Paid out"],["ac_nopay","لا يوجد سحب بعد","Payout not yet"],["ac_switch","تبديل الحساب ⇄","Switch account ⇄"],
  ["sr_q2","إذا أردت أن تتحسّن، اقبل أن يُنظر إليك كأنك بلا عقل وأحمق فيما يخص الأمور الخارجية.","If you would improve, submit to be considered without sense and foolish with respect to externals."],["sr_attr2","إبيكتيتوس · المختصر XIII · ترجمة جورج لونغ","EPICTETUS · ENCHIRIDION XIII · TR. GEORGE LONG"]].forEach(function(r){JD[r[0]]=[r[1],r[2]]});
+
+/* ---- fluid morphing indicator for active pills/tabs ---- */
+var MORPH={};
+function mKey(c){var a=c.closest&&c.closest("[id]");return c.id||(c.className||"").replace(/\s+/g,".")+"@"+(a&&a!==c?a.id:"")}
+function morphOne(c){if(!c.offsetWidth&&!c.offsetHeight)return;var kids=Array.prototype.slice.call(c.children),act=null;
+  kids.forEach(function(k){if(!act&&k.className!=="mi"&&(k.getAttribute("aria-current")==="page"||k.getAttribute("aria-pressed")==="true"))act=k});
+  var mi=kids.filter(function(k){return k.className==="mi"})[0],key=mKey(c),fresh=false;
+  if(!mi){mi=document.createElement("i");mi.className="mi";c.insertBefore(mi,c.firstChild);c.classList.add("morph-on");fresh=true;var pr=MORPH[key];
+    if(pr){mi.style.cssText="width:"+pr.w+"px;height:"+pr.h+"px;transform:translate("+pr.x+"px,"+pr.y+"px);opacity:"+pr.o}else{mi.style.transition="none";mi.style.opacity="0"}}
+  if(!act){mi.style.opacity="0";MORPH[key]=Object.assign({},MORPH[key],{o:0});return}
+  var g={x:act.offsetLeft,y:act.offsetTop,w:act.offsetWidth,h:act.offsetHeight,o:1};MORPH[key]=g;
+  var go2=function(){mi.style.width=g.w+"px";mi.style.height=g.h+"px";mi.style.transform="translate("+g.x+"px,"+g.y+"px)";mi.style.opacity="1"};
+  if(fresh&&!MORPH[key+"#seen"]){go2();MORPH[key+"#seen"]=1;requestAnimationFrame(function(){mi.style.transition=""})}else requestAnimationFrame(go2)}
+var mT=0;function morphAll(){mT=0;Array.prototype.forEach.call(document.querySelectorAll(".nav,.apills,.seg,.srdock"),morphOne)}
+new MutationObserver(function(){if(!mT)mT=requestAnimationFrame(morphAll)}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:["aria-pressed","aria-current","hidden"]});
+window.addEventListener("resize",morphAll);setTimeout(morphAll,200);
 
 /* dashboard */
 function render(){
